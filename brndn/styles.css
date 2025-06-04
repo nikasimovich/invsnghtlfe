@@ -1,0 +1,302 @@
+@font-face {
+    font-family: '10mal12Lampen';
+    src: url('assets/10mal12Lampen.woff2') format('woff2'),
+        url('assets/10mal12Lampen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CATReporter';
+    src: url('assets/CATReporter.woff2') format('woff2'),
+        url('assets/CATReporter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GraphicCAT';
+    src: url('assets/GraphicCAT.woff2') format('woff2'),
+        url('assets/GraphicCAT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Herkules';
+    src: url('assets/Herkules.woff2') format('woff2'),
+        url('assets/Herkules.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ketwurst';
+    src: url('assets/Ketwurst.woff2') format('woff2'),
+        url('assets/Ketwurst.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABCM';
+    src: url('assets/ABCMaristVariable-Trial.woff2') format('woff2'),
+        url('assets/ABCMaristVariable-Trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABCMI';
+    src: url('assets/ABCMaristVariableItalic-Trial.woff2') format('woff2'),
+        url('assets/ABCMaristVariableItalic-Trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #2a3dff;
+    color: yellow;
+    padding: 0;
+    margin: 0;
+    font-size: 27px;
+    font-family: "ABCM";
+    font-weight: normal;
+    line-height: 1.25;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box; /* Include border in width calculations */
+}
+
+
+p {
+    margin-bottom: -5px;
+}
+
+
+.audio {
+    margin-top:100px;
+}
+
+.author {
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+span.small {
+    font-size: 20px !important;
+}
+
+canvas {
+    max-width: 102%;
+}
+
+footer {
+    background-color:yellow;
+    margin-top: 100px;
+    margin-bottom: -9px;
+}
+
+h1 {
+    font-family: 'Herkules';
+    color:#000AFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 25vh; /* Ensure this is appropriate for your layout */
+    letter-spacing: 2px;
+    line-height: .9;
+    text-align:center;
+    transform: rotate(-25deg);
+    transform-origin: center;
+}
+
+#footer-text {
+    margin: 0;
+    color:yellow;
+    margin: -50px 0;
+/*    color:yellow;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000AFF;*/
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Or set a specific height */
+    max-height: 100vh; /* Ensures it doesn't exceed viewport height */
+    box-sizing: border-box;
+    position:fixed;
+    background-color:yellow;
+    animation: fade 2s 3s forwards, disappear 1s 4s forwards;
+}
+
+
+#header-text {
+    text-align: center;
+    animation: scaleUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards, fade 3s 2s forwards;
+    margin: 0;
+    min-width: 100%; /* Ensures the element doesn't shrink */
+}
+
+
+
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5) rotate(-25deg);
+    }
+    70% {
+        transform: scale(1.1) rotate(-25deg);
+    }
+    100% {
+        transform: scale(1) rotate(-25deg);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        visibility:visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes timeTurn {
+    0% {
+        transform:rotate(0);
+    }
+
+    100% {
+        transform:rotate(1turn);
+    }
+}
+
+
+@keyframes fade {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+::selection {
+    background: navy;
+    color: #000AFF;
+}
+
+::-moz-selection {
+    background: #F65800;
+    color: white;
+}
+
+.grid-item {
+    margin-bottom: 100px;
+    max-width: 800px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Center content horizontally */
+}
+
+main {
+    padding: 0 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 11vh;
+        line-height: 1;
+        transform: rotate(-45deg);
+    }
+
+    body {
+        font-size:24px;
+    }
+    author {
+        font-size:23px;
+    }
+
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+#sticky-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box; 
+}
+
+
+#sticky-header .time-circle {
+    /* color: white; */
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    text-align: center;
+   
+}
+
+
+
+#california-time {
+    background-color: #000AFF;
+    color: yellow;
+    border-radius: 50% 40% 60% 40% / 40% 60% 40% 60%;
+    animation: timeTurn 20s linear infinite;
+    animation-play-state: running; /* Corrected from "playing" to "running" */
+}
+
+#nyc-time
+ {
+    background-color: yellow;
+    color: #000AFF;
+    border-radius: 60% 50% 40% 50% / 50% 40% 60% 40%;
+    animation: timeTurn 20s linear reverse infinite;
+    animation-play-state: running; /* Corrected from "playing" to "running" */
+}
+
+#nyc-time:hover {
+    animation-play-state: paused;
+    cursor:pointer;
+}
+
+#california-time:hover {
+    animation-play-state: paused;
+    cursor:pointer;
+}
