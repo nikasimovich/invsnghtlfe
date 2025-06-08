@@ -96,7 +96,7 @@ span.faded {
 
 .circle-item {
   position: absolute;
-  text-decoration:none;
+  text-decoration: none;
   max-width: 220px;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -104,15 +104,17 @@ span.faded {
   word-wrap: break-word;
   line-height: 1.2em;
   font-family: "Ivory-BoldItalic", times;
-
+  animation: self-spin 360s linear infinite;
+  animation-play-state: running;
+  transition: animation 0.3s ease-in-out;
+  /* This rotates 1 degree per second (360deg in 6 minutes = 360s) */
 }
 
 .circle-item:hover {
   font-family: "Ivory-BoldItalic", times;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
                0 0 10px rgba(255, 255, 255, 0.2);
-
-  transition: all 200ms ease-in-out;
+  animation: self-spin-reverse 360s linear infinite;
 }
 
 
@@ -148,9 +150,24 @@ footer {
 }
 
 
+@keyframes self-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 
 
-
+@keyframes self-spin-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
 
 
 
@@ -180,5 +197,6 @@ footer {
     width: 90%;
     max-width: 600px;
     text-align: center;
+    animation: self-spin 360s linear infinite;
   }
 }
