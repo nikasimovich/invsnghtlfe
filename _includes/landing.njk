@@ -13,17 +13,20 @@
     <a 
       href="{{ post.url }}" 
       class="circle-item item-{{ loop.index }}" 
-      data-category="{{ post.data.category }}" 
-      data-image="/assets/{{ post.data.category | slug }}.png"
+      data-category="{{ post.data.category }}"
     >
      <span class="index-number">
        {{ post.data.order }}
      </span>
 
+
       <span class="title">{{ post.data.title }}</span><br>
       <span class="author">{{ post.data.author }}</span>
     </a>
   {% endfor %}
+       <div class="centerpiece" id="centerpiece">
+       <img id="center-icon" src="/assets/imgs/signs.svg" alt="Center icon">
+     </div>
   </div>
 </div>
     </div>

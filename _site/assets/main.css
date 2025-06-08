@@ -10,6 +10,7 @@ body {
   font-weight:normal;
   font-size: 21px;
   overflow-y: auto;
+  overflow-x:hidden;
 }
 
 a {
@@ -137,8 +138,7 @@ span.faded {
 }
 
 .centerpiece img {
-  max-width: 60px;
-  margin-bottom: 0.5rem;
+  max-width: 20vw;
 }
 
 footer {

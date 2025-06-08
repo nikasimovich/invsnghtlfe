@@ -49,3 +49,22 @@ function positionCircleItems() {
 
 window.addEventListener('DOMContentLoaded', positionCircleItems);
 window.addEventListener('resize', positionCircleItems);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.circle-item');
+  const centerpieceImg = document.getElementById('center-icon');
+
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const category = item.getAttribute('data-category');
+      if (category) {
+        centerpieceImg.src = `/assets/imgs/${category}.svg`;
+      }
+    });
+
+    // item.addEventListener('mouseleave', () => {
+    //   centerpieceImg.src = '/assets/imgs/eyes.svg'; // fallback image
+    // });
+  });
+});
+
