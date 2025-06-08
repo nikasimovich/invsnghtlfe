@@ -11,6 +11,8 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByTag("essays").reverse();
   });
 
+  eleventyConfig.addPassthroughCopy("assets");
+
   return {
     dir: {
       input: ".",

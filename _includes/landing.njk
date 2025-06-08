@@ -1,13 +1,31 @@
 {% extends "base.njk" %}
 
 {% block content %}
-  <h1>Invisible Nightlife Review</h1>
-  <ul>
-    {% for post in collections.essays %}
-      <li>
-        <a href="{{ post.url }}">{{ post.data.title }}</a> 
-        <small>— {{ post.date | date("MMMM D, YYYY") }}</small>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="parentWrap">
+<div class="titleWrap ">
+  <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
+  <p class="subtitle item">Open from 12 to 6am</p>
+</div>
+
+<div class="circle-wrapper">
+  <div class="circle">
+  {% for post in collections.essays %}
+    <a 
+      href="{{ post.url }}" 
+      class="circle-item item-{{ loop.index }}" 
+      data-category="{{ post.data.category }}" 
+      data-image="/assets/{{ post.data.category | slug }}.png"
+    >
+     <span class="index-number">
+       {{ post.data.order }}
+     </span>
+
+      <span class="title">{{ post.data.title }}</span><br>
+      <span class="author">{{ post.data.author }}</span>
+    </a>
+  {% endfor %}
+  </div>
+</div>
+    </div>
+  </div>
 {% endblock %}

@@ -1,0 +1,184 @@
+:root {
+    --dark:#213174;
+    --light:#AAC2FF;
+}
+
+body {
+  background-color: var(--dark);
+  color:  var(--light);
+  font-family: "Ivory-Regular", times;
+  font-weight:normal;
+  font-size: 21px;
+  overflow-y: auto;
+}
+
+a {
+  color: var(--light);
+}
+
+a:hover {
+/*  transform: scale(1.1);
+  transition: transform 100ms ease-in-out;*/
+}
+
+h1 {
+  font-family: "Visual", arial;
+  font-weight: normal;
+  font-size: 52px;
+  letter-spacing: .1px;
+  text-align: center;
+  line-height: .9;
+}
+
+.titleWrap {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.item {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family:"Ivory-BoldItalic", times;
+  font-weight:normal;
+  margin-top: 10px;
+}
+
+span.faded {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--light);
+  color: var(--dark);
+}
+
+@font-face {
+  font-family: "Ivory-BoldItalic";
+  src: url("fonts/IvoryLLWeb-BoldItalic.woff") format("woff");
+  src: url("fonts/IvoryLLWeb-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ivory-Regular";
+  src: url("fonts/IvoryLLWeb-Regular.woff") format("woff");
+  src: url("fonts/IvoryLLWeb-Regular.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: "Visual";
+  src: url("fonts/Visual-Semibold.woff2") format("woff2");
+}
+
+.parentWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.circle-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem 0;
+}
+
+.title {
+  text-transform:uppercase;
+  letter-spacing:.1px;
+}
+
+.circle-item {
+  position: absolute;
+  text-decoration:none;
+  max-width: 220px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  font-family: "Ivory-BoldItalic", times;
+
+}
+
+.circle-item:hover {
+  font-family: "Ivory-BoldItalic", times;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+               0 0 10px rgba(255, 255, 255, 0.2);
+
+  transition: all 200ms ease-in-out;
+}
+
+
+
+::selection {
+  background-color:#120028;
+  color: var(--dark);
+}
+
+.centerpiece {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.index-number {
+  display: block;
+  color: var(--light);
+  font-size: 1rem;
+  opacity: 1;
+}
+
+.centerpiece img {
+  max-width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  display:flex;
+  justify-content:space-between;
+  width:100vw;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .circle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .circle-item {
+    position: static !important; /* ← This puts them back into document flow */
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+}
