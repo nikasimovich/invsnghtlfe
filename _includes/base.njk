@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
-  <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+  <link rel="icon" href="{{ '/assets/imgs/favicon.png' | url }}">
   <link rel="stylesheet" href="/assets/main.css">
 </head>
 <body>
   {% block content %}{% endblock %}
   <script src="/assets/main.js" defer></script>
   <footer>
-    <img src="../assets/imgs/dirt-logo.svg">
+    <img src="{{ '/assets/imgs/dirt-logo.svg' | url }}">
     <a href="">Masthead</a>
-    <img src="../assets/imgs/newschool-logo.svg">
+    <img src="{{ '/assets/imgs/newschool-logo.svg' | url }}">
   </footer>
 </body>
 </html>
