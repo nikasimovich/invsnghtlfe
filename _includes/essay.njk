@@ -3,7 +3,7 @@
 {% block content %}
 <article class="essay">
   <img class="catimessay" src="/../assets/imgs/{{category}}.svg">
-  <span class="essayorder">{{ order }}</span>
+  <a href="../../index"><span class="essayorder">{{ order }}</span></a>
   <h1 class="essay-title">{{ title }}</h1>
   <span class="author">{{ author }}</span>
   <div class="essay-content">
@@ -11,7 +11,9 @@
     {{ content | safe }}
   </div>
 </article>
-<nav>
-Invis
-</nav>
+<div class="titleWrap interior">
+  <a href="../../index">
+  <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
+  </a>
+</div>
 {% endblock %}
