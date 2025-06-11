@@ -150,6 +150,53 @@ footer {
 }
 
 
+/*Interior Essay Page Template*/
+.essay {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 200px;
+}
+
+.essay-title {
+  text-align:left;
+  margin:0 0 25px 0;
+  line-height:1.2;
+}
+
+.essay-content {
+  font-family: "Ivory-Regular", times;
+  font-weight: normal;
+  margin-top: 50px;
+}
+
+.essayorder {
+  margin-bottom:25px;
+}
+
+.catimessay {
+  max-width: 20vw;
+  position: absolute;
+  right: 10vw;
+  top: 7vw;
+  z-index:0;
+  opacity: .5;
+}
+
+.catimessayalt {
+  width: 150px;
+  position: absolute;
+  transform: rotate(-10deg);
+  left:8vw;
+  top: 120vh;
+  z-index:0;
+  opacity: .5;
+}
+
+
+
+
+/*Mobile*/
+
 @keyframes self-spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -199,4 +246,10 @@ footer {
     text-align: center;
     animation: self-spin 360s linear infinite;
   }
+
+
+  /*MOBILE Interior Essay Page Template*/
+.essay {
+  padding: 25px 25px;
+}
 }
