@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('mouseenter', () => {
       const category = item.getAttribute('data-category');
       if (category) {
-        centerpieceImg.src = new URL(`/assets/imgs/${category}.svg`, window.location.origin).pathname;
+        centerpieceImg.src = `${basePath}assets/imgs/${category}.svg`;
       }
     });
 
