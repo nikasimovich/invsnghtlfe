@@ -1,8 +1,8 @@
 // Simple password protection
-var password = prompt("Enter password:");
-if (password !== "dirt") {
-  document.body.innerHTML = "Access denied.";
-}
+// var password = prompt("Enter password:");
+// if (password !== "dirt") {
+//   document.body.innerHTML = "Access denied.";
+// }
 
 // Position circle items in a ring (desktop) or vertically (mobile)
 function positionCircleItems() {
@@ -53,17 +53,20 @@ window.addEventListener('resize', positionCircleItems);
 document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('.circle-item');
   const centerpieceImg = document.getElementById('center-icon');
-  const basePath = document.body.dataset.base || '';
+
+  const basePath = window.location.pathname.includes('/invsnghtlfe')
+    ? '/invsnghtlfe'
+    : '';
 
   items.forEach(item => {
     item.addEventListener('mouseenter', () => {
       const category = item.getAttribute('data-category');
       if (category) {
-        centerpieceImg.src = new URL(`/assets/imgs/${category}.svg`, window.location.origin).pathname;
+        centerpieceImg.src = `${basePath}/assets/imgs/${category}.svg`;
       }
     });
 
-    // Optional: fallback image
+    // Optional fallback on mouse leave
     // item.addEventListener('mouseleave', () => {
     //   centerpieceImg.src = `${basePath}/assets/imgs/eyes.svg`;
     // });

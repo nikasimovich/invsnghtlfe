@@ -1,5 +1,7 @@
 const { DateTime } = require("luxon");
 
+const isProd = process.env.ELEVENTY_ENV === "production";
+
 module.exports = function (eleventyConfig) {
   // Filters
   eleventyConfig.addFilter("date", (dateObj, format = "LLLL d, yyyy") => {
@@ -14,9 +16,9 @@ module.exports = function (eleventyConfig) {
   // Static Assets
   eleventyConfig.addPassthroughCopy("assets");
 
-  // ✅ KEY CHANGE HERE:
+  // ✅ Environment-based pathPrefix
   return {
-    pathPrefix: "/invsnghtlfe", // This makes {{ '/assets/main.css' | url }} point correctly
+    pathPrefix: isProd ? "/invsnghtlfe" : "/",
     dir: {
       input: ".",
       includes: "_includes",
