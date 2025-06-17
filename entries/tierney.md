@@ -1,7 +1,7 @@
 ---
 title: TransCore Dollar Bill
 author: Eva Szilardi-Tierney
-date: 2025-06-01
+date: 2025-06-08
 tags: essays
 category: signs
 altimg: spade

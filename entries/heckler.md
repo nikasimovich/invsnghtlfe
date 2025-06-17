@@ -1,7 +1,7 @@
 ---
 title: When the Hand Offers You Cherries, Land on the Pit
 author: Lillian Heckler
-date: 2024-01-01
+date: 2025-06-09
 tags: essays
 category: desire
 altimg: goblet

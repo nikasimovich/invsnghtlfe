@@ -1,7 +1,7 @@
 ---
 title: Bic Lighter
 author: Pete Reilly
-date: 2025-06-01
+date: 2025-06-07
 tags: essays
 category: signs
 altimg: shoe

@@ -1,7 +1,7 @@
 ---
 title: Get Home Safe
 author: Mandy Kim
-date: 2025-06-01
+date: 2025-06-05
 tags: essays
 category: memory
 altimg: heartalt

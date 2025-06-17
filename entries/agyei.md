@@ -1,7 +1,7 @@
 ---
 title: A Night on the Cruise Ship
 author: Diamond Agyei
-date: 2025-06-01
+date: 2025-06-10
 tags: essays
 category: signs
 altimg: club
