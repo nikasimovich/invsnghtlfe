@@ -1,3 +1,10 @@
+
+  var password = prompt("Enter password:");
+  if (password !== "dirt") {
+    document.body.innerHTML = "Access denied.";
+  }
+
+
 function positionCircleItems() {
   const circleWrapper = document.querySelector('.circle-wrapper');
   const container = document.querySelector('.circle');
