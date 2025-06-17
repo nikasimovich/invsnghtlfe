@@ -1,8 +1,8 @@
 // Simple password protection
-var password = prompt("Enter password:");
-if (password !== "dirt") {
-  document.body.innerHTML = "Access denied.";
-}
+// var password = prompt("Enter password:");
+// if (password !== "dirt") {
+//   document.body.innerHTML = "Access denied.";
+// }
 
 // Position circle items in a ring (desktop) or vertically (mobile)
 function positionCircleItems() {
