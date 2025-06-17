@@ -2,12 +2,12 @@
 
 {% block content %}
 <article class="essay">
-  <img class="catimessay" src="/../assets/imgs/{{category}}.svg">
-  <a href="../../index"><span class="essayorder">{{ order }}</span></a>
+  <img class="catimessay" src="/../assets/imgs/{{category}}.svg | url }}">
+  <a href="../../index | url }}"><span class="essayorder">{{ order }}</span></a>
   <h1 class="essay-title">{{ title }}</h1>
   <span class="author">{{ author }}</span>
   <div class="essay-content">
-    <img class="catimessayalt" src="/../assets/imgs/{{altimg}}.svg">
+    <img class="catimessayalt" src="/../assets/imgs/{{altimg}}.svg | url }}">
     {{ content | safe }}
   </div>
 </article>
