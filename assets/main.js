@@ -1,8 +1,8 @@
 // Simple password protection
-// var password = prompt("Enter password:");
-// if (password !== "dirt") {
-//   document.body.innerHTML = "Access denied.";
-// }
+var password = prompt("Enter password:");
+if (password !== "dirt") {
+  document.body.innerHTML = "Access denied.";
+}
 
 // Position circle items in a ring (desktop) or vertically (mobile)
 function positionCircleItems() {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('mouseenter', () => {
       const category = item.getAttribute('data-category');
       if (category) {
-        centerpieceImg.src = `${basePath}assets/imgs/${category}.svg`;
+        centerpieceImg.src = new URL(`/assets/imgs/${category}.svg`, window.location.origin).pathname;
       }
     });
 
