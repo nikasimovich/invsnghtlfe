@@ -3,6 +3,11 @@
     --light:#AAC2FF;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--dark);
   color:  var(--light);
@@ -233,7 +238,7 @@ footer {
 }
 
 
-/*Mobile*/
+
 
 @keyframes self-spin {
   from {
@@ -254,7 +259,7 @@ footer {
   }
 }
 
-
+/*Mobile*/
 
 
 @media (max-width: 768px) {
@@ -276,15 +281,14 @@ footer {
   }
 
   .circle-item {
-    position: static !important; /* ← This puts them back into document flow */
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    animation: self-spin 360s linear infinite;
-  }
+      position: relative;
+      width: 90%;
+      max-width: 600px;
+      left: auto;
+      top: auto;
+      transform: none;
+      animation: none; /* Optional: remove rotation on mobile */
+    }
 
 
 

@@ -6,7 +6,6 @@
     "dev": "ELEVENTY_ENV=development eleventy --serve",
     "build": "ELEVENTY_ENV=production eleventy",
     "deploy": "npm run build && git subtree push --prefix _site origin gh-pages"
-
   },
   "keywords": [],
   "author": "",

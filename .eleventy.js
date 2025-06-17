@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
   // Static Assets
   eleventyConfig.addPassthroughCopy("assets");
 
-  // ✅ Environment-based pathPrefix
+  // Use pathPrefix based on environment
   return {
     pathPrefix: isProd ? "/invsnghtlfe" : "/",
     dir: {
