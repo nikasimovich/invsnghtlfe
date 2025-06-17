@@ -2,18 +2,18 @@
 
 {% block content %}
 <article class="essay">
-  <img class="catimessay" src="/../assets/imgs/{{category}}.svg | url }}">
-  <a href="../../index | url }}"><span class="essayorder">{{ order }}</span></a>
+  <img class="catimessay" src="{{ ('/assets/imgs/' + category + '.svg') | url }}" alt="{{ category }}">
+  <a href="{{ '/' | url }}"><span class="essayorder">{{ order }}</span></a>
   <h1 class="essay-title">{{ title }}</h1>
   <span class="author">{{ author }}</span>
   <div class="essay-content">
-    <img class="catimessayalt" src="/../assets/imgs/{{altimg}}.svg | url }}">
+    <img class="catimessayalt" src="{{ ('/assets/imgs/' + altimg + '.svg') | url }}" alt="{{ altimg }}">
     {{ content | safe }}
   </div>
 </article>
 <div class="titleWrap interior">
-  <a href="../../index">
-  <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
+  <a href="{{ '/' | url }}">
+    <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
   </a>
 </div>
 {% endblock %}

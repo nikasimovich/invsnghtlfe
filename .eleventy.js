@@ -15,11 +15,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
 
   return {
-    pathPrefix: "/invsnghtlfe", // ← this is the important addition
+    pathPrefix: "/invsnghtlfe",
     dir: {
       input: ".",
       includes: "_includes",
       output: "_site"
     }
   };
+
 };
