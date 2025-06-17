@@ -1,10 +1,10 @@
+// Simple password protection
+var password = prompt("Enter password:");
+if (password !== "dirt") {
+  document.body.innerHTML = "Access denied.";
+}
 
-  var password = prompt("Enter password:");
-  if (password !== "dirt") {
-    document.body.innerHTML = "Access denied.";
-  }
-
-
+// Position circle items in a ring (desktop) or vertically (mobile)
 function positionCircleItems() {
   const circleWrapper = document.querySelector('.circle-wrapper');
   const container = document.querySelector('.circle');
@@ -12,15 +12,9 @@ function positionCircleItems() {
 
   if (!circleWrapper || allItems.length === 0) return;
 
-  // ✅ Convert NodeList to a static array
   const items = Array.from(allItems);
+  items.forEach((item, i) => item.dataset.order = i);
 
-  // ✅ Always assign clockwise order index
-  items.forEach((item, i) => {
-    item.dataset.order = i;
-  });
-
-  // ✅ MOBILE: reset styles + reorder DOM based on data-order
   if (window.innerWidth < 768) {
     items.forEach(item => {
       item.style.left = '';
@@ -28,7 +22,6 @@ function positionCircleItems() {
       item.style.transform = '';
     });
 
-    // ✅ Sort and clone list before DOM manipulation
     const sortedItems = [...items].sort((a, b) => {
       return parseInt(a.dataset.order) - parseInt(b.dataset.order);
     });
@@ -37,7 +30,6 @@ function positionCircleItems() {
     return;
   }
 
-  // ✅ DESKTOP: Circular layout
   const circleWidth = circleWrapper.offsetWidth;
   const circleHeight = circleWrapper.offsetHeight;
   const radius = Math.min(circleWidth, circleHeight) * 0.4;
@@ -57,21 +49,23 @@ function positionCircleItems() {
 window.addEventListener('DOMContentLoaded', positionCircleItems);
 window.addEventListener('resize', positionCircleItems);
 
+// Dynamic hover image based on category
 document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('.circle-item');
   const centerpieceImg = document.getElementById('center-icon');
+  const basePath = document.body.dataset.base || '';
 
   items.forEach(item => {
     item.addEventListener('mouseenter', () => {
       const category = item.getAttribute('data-category');
       if (category) {
-        centerpieceImg.src = `/assets/imgs/${category}.svg`;
+        centerpieceImg.src = new URL(`/assets/imgs/${category}.svg`, window.location.origin).pathname;
       }
     });
 
+    // Optional: fallback image
     // item.addEventListener('mouseleave', () => {
-    //   centerpieceImg.src = '/assets/imgs/eyes.svg'; // fallback image
+    //   centerpieceImg.src = `${basePath}/assets/imgs/eyes.svg`;
     // });
   });
 });
-

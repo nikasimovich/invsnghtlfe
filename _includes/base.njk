@@ -6,9 +6,9 @@
   <link rel="icon" href="{{ '/assets/imgs/favicon.png' | url }}">
   <link rel="stylesheet" href="{{ '/assets/main.css' | url }}">
 </head>
-<body>
-  {% block content %}{% endblock %}
+<body data-base="{{ '/' | url }}">
   <script src="{{ '/assets/main.js' | url }}" defer></script>
+  {% block content %}{% endblock %}
   <footer>
     <a href="https://dirt.fyi/"><img src="{{ '/assets/imgs/dirt-logo.svg' | url }}" alt="Dirt logo"></a>
     <a href="#">Masthead</a>
