@@ -1,32 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Flame Through the Night</title>
-  <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
-  <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
-</head>
-<body data-base="/invsnghtlfe/">
-  <script src="/invsnghtlfe/assets/main.js" defer></script>
-  
+{% extends "base.njk" %}
+
+{% block content %}
 <article class="essay">
-  <img class="catimessay" src="/invsnghtlfe/assets/imgs/signs.svg" alt="signs">
-  <a href="/invsnghtlfe/"><span class="essayorder">4</span></a>
-  <h1 class="essay-title">A Flame Through the Night</h1>
-  <span class="author">Pete Reilly</span>
+  <img class="catimessay" src="{{ ('/assets/imgs/' + category + '.svg') | url }}" alt="{{ category }}">
+  <a href="{{ '/' | url }}"><span class="essayorder">{{ order }}</span></a>
+  <h1 class="essay-title">{{ title }}</h1>
+  <span class="author">{{ author }}</span>
 
   <!-- 🗺️ Add the map here -->
   <div id="flame-map"></div>
 
   <div class="essay-content">
-    <img class="catimessayalt" src="/invsnghtlfe/assets/imgs/shoe.svg" alt="shoe">
-    
+    <img class="catimessayalt" src="{{ ('/assets/imgs/' + altimg + '.svg') | url }}" alt="{{ altimg }}">
+    {{ content | safe }}
   </div>
 </article>
 
 <div class="titleWrap interior">
-  <a href="/invsnghtlfe/">
+  <a href="{{ '/' | url }}">
     <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
   </a>
 </div>
@@ -45,11 +36,11 @@
     }).addTo(map);
 
 
-    fetch('/invsnghtlfe/assets/pete.json')
+    fetch('{{ "/assets/pete.json" | url }}')
       .then((res) => res.json())
       .then((data) => {
       const customIcon = L.icon({
-        iconUrl: '/invsnghtlfe/assets/imgs/lighter.png',
+        iconUrl: '{{ "/assets/imgs/lighter.png" | url }}',
         iconSize: [35, 100],
         iconAnchor: [12, 40],
         popupAnchor: [0, -40]
@@ -69,11 +60,4 @@
   });
 </script>
 
-
-  <footer>
-    <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
-    <a href="#">Masthead</a>
-    <a href="https://www.newschool.edu/"><img src="/invsnghtlfe/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
-  </footer>
-</body>
-</html>
+{% endblock %}

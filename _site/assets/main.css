@@ -60,6 +60,14 @@ span.faded {
   color: var(--dark);
 }
 
+/* Map Styles */
+
+#flame-map {
+   height: 80vw !important;
+   margin-top: 50px;
+   filter: hue-rotate(2deg);
+}
+
 @font-face {
   font-family: "Ivory-BoldItalic";
   src: url("fonts/IvoryLLWeb-BoldItalic.woff") format("woff");
@@ -258,6 +266,9 @@ footer {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
+
+
+
 
 /*Mobile*/
 

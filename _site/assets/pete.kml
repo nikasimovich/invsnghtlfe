@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="15wJaqBhXL_4f22_4suZrVBxLeXlWnNID">
+	<name>WIP Pete A Flame Through the Night</name>
+	<gx:CascadingStyle kml:id="__managed_style_27540922A138B524D4E9">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.8</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=213174&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>2</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1B5AB7653E38B524D4E9">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=213174&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>2</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_240BAB6D0038B523DA68">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>2.4</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=213174&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1119C3D31338B523DA68">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=213174&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_00B8F899E238B524D4E9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1B5AB7653E38B524D4E9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_27540922A138B524D4E9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_092A6D8F3838B523DA68">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1119C3D31338B523DA68</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_240BAB6D0038B523DA68</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0B8568C01F37506A8AAA">
+		<name>   Corner of 119th Street and Adam Clayton Powell Jr. Blvd</name>
+		<description><![CDATA[<div>Things have social lives. They pass from hand to hand, vanish into pockets, and reappear in places they were never intended to be. The red Bic lighter was one such thing—plastic and<br></div><div>butane molded in a French factory, shipped across the Atlantic as part of a shipment, not as an individual but as a unit of commerce. It arrived in New York City, displayed behind scratched<br></div><div>bodega glass on 119th Street, a disposable object meant to be used and lost. Its purpose was<br></div><div>simple: to spark a brief flame, then disappear.<b></b><br></div>]]></description>
+		<LookAt>
+			<longitude>-73.95123479999999</longitude>
+			<latitude>40.8053987</latitude>
+			<altitude>12.8150932375778</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>98675.58911486529</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_092A6D8F3838B523DA68</styleUrl>
+		<Point>
+			<coordinates>-73.92580644586141,40.72586161942461,6.894793716265113</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0694A70B1938B518309F">
+		<name>Uber Ride Down FDR Drive from Harlem to LES</name>
+		<description><![CDATA[<div>Through the city, dusk settled, and lights bled into the sky. Inside the bodega, the red lighter rested beside gum, condoms, and mini whiskey bottles—objects of impulse. Outside, beneath a flickering streetlamp, a woman lingered, a cigarette balanced between her fingers.<br></div>]]></description>
+		<LookAt>
+			<longitude>-73.8997494</longitude>
+			<latitude>40.73609916</latitude>
+			<altitude>11.49933687</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000128</gx:fovy>
+			<range>13930.40324672</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00B8F899E238B524D4E9</styleUrl>
+		<Point>
+			<coordinates>-73.9696192,40.7463059,20.86230546292959</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
