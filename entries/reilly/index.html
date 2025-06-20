@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bic Lighter</title>
+  <title>A Flame Through the Night</title>
   <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
   <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
 </head>
@@ -13,18 +13,62 @@
 <article class="essay">
   <img class="catimessay" src="/invsnghtlfe/assets/imgs/signs.svg" alt="signs">
   <a href="/invsnghtlfe/"><span class="essayorder">4</span></a>
-  <h1 class="essay-title">Bic Lighter</h1>
+  <h1 class="essay-title">A Flame Through the Night</h1>
   <span class="author">Pete Reilly</span>
+
+  <!-- 🗺️ Add the map here -->
+  <div id="flame-map"></div>
+
   <div class="essay-content">
     <img class="catimessayalt" src="/invsnghtlfe/assets/imgs/shoe.svg" alt="shoe">
     
   </div>
 </article>
+
 <div class="titleWrap interior">
   <a href="/invsnghtlfe/">
     <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
   </a>
 </div>
+
+<!-- 🧭 Leaflet dependencies + script -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const map = L.map('flame-map').setView([40.74, -73.95], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap & CartoDB',
+    }).addTo(map);
+
+
+    fetch('/invsnghtlfe/assets/pete.json')
+      .then((res) => res.json())
+      .then((data) => {
+      const customIcon = L.icon({
+        iconUrl: '/invsnghtlfe/assets/imgs/lighter.png',
+        iconSize: [35, 100],
+        iconAnchor: [12, 40],
+        popupAnchor: [0, -40]
+      });
+
+      L.geoJSON(data, {
+        pointToLayer: (feature, latlng) => {
+          return L.marker(latlng, { icon: customIcon });
+        },
+        onEachFeature: (feature, layer) => {
+          const name = feature.properties.name || '';
+          const description = feature.properties.description || '';
+          layer.bindPopup(`<strong>${name}</strong><p>${description}</p>`);
+        }
+      }).addTo(map);
+      });
+  });
+</script>
+
 
   <footer>
     <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
