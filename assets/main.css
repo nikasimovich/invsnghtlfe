@@ -302,6 +302,14 @@ footer {
     }
 
 
+/*MOBILE map*/
+
+#flame-map {
+   height: 120vh !important;
+   margin-top: 50px;
+   filter: hue-rotate(2deg);
+}
+
 
   /*MOBILE Interior Essay Page Template*/
 .essay {
