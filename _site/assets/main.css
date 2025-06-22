@@ -104,6 +104,42 @@ span.faded {
     color: #213174 !important;
 }
 
+
+/* Get Home Safe Styles */
+button {
+  font-family: "Visual", arial !important;
+  font-size: 16px;
+  color: var(--dark);
+  background-color: var(--light);
+  outline: none;
+  box-shadow: none;
+  border: none;
+  padding: 10px;
+  margin-top: 25px;
+  border: 1px solid;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.ended {
+    border: 1px dotted;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+audio {
+  margin-top: 50px;
+}
+
+.playing {
+    border: 1px dotted;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
 @font-face {
   font-family: "Ivory-BoldItalic";
   src: url("fonts/IvoryLLWeb-BoldItalic.woff") format("woff");

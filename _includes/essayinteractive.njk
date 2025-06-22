@@ -1,0 +1,81 @@
+{% extends "base.njk" %}
+
+{% block content %}
+
+<article class="essay">
+  <img class="catimessay" src="{{ ('/assets/imgs/' + category + '.svg') | url }}" alt="{{ category }}">
+  <a href="{{ '/' | url }}"><span class="essayorder">{{ order }}</span></a>
+  <h1 class="essay-title">{{ title }}</h1>
+  <span class="author">{{ author }}</span>
+
+  <div class="essay-content" id="essay-container">
+    <img class="catimessayalt" src="{{ ('/assets/imgs/' + altimg + '.svg') | url }}" alt="{{ altimg }}">
+    <!-- First paragraph injected via JS -->
+  </div>
+
+  <div id="button-container" class="essay-buttons">
+    <button id="audio-btn">Get Home Safe</button>
+    <button id="continue-btn">Continue Reading</button>
+  </div>
+
+  <audio id="safe-audio" preload="auto" controls style="display:none;">
+    <source src="{{ audio | url }}" type="audio/mpeg">
+    <source src="/assets/audio/walk.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+</article>
+
+<div class="titleWrap interior">
+  <a href="{{ '/' | url }}">
+    <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
+  </a>
+</div>
+
+<script>
+  const paragraphs = {{ paragraphs | dump | safe }};
+  let currentParagraph = 0;
+
+  const essayContainer = document.getElementById("essay-container");
+  const continueBtn = document.getElementById("continue-btn");
+  const audioBtn = document.getElementById("audio-btn");
+  const audioEl = document.getElementById("safe-audio");
+
+  function showNextParagraph() {
+    if (currentParagraph < paragraphs.length) {
+      const p = document.createElement("p");
+      p.textContent = paragraphs[currentParagraph];
+      essayContainer.appendChild(p);
+      currentParagraph++;
+
+      if (currentParagraph === paragraphs.length) {
+        continueBtn.disabled = true;
+        continueBtn.textContent = "The End";
+        continueBtn.classList.add("ended");
+      }
+    }
+  }
+
+  function toggleAudio() {
+    if (audioEl.style.display === "none") {
+      audioEl.style.display = "block";
+      audioEl.play();
+      audioBtn.classList.add("playing");
+    } else {
+      if (!audioEl.paused) {
+        audioEl.pause();
+        audioBtn.classList.remove("playing");
+      } else {
+        audioEl.play();
+        audioBtn.classList.add("playing");
+      }
+    }
+  }
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showNextParagraph();
+    continueBtn.addEventListener("click", showNextParagraph);
+    audioBtn.addEventListener("click", toggleAudio);
+  });
+</script>
+{% endblock %}

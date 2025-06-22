@@ -3,7 +3,7 @@ title: The High Priestess of Paradise
 author: Gabriel Chavez
 date: 2025-06-01
 tags: essays
-category: memory
+category: buried
 altimg: diamondalt
 order: 8
 layout: essay.njk
