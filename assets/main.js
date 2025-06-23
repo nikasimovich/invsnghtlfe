@@ -49,7 +49,7 @@ function positionCircleItems() {
 window.addEventListener('DOMContentLoaded', positionCircleItems);
 window.addEventListener('resize', positionCircleItems);
 
-// Dynamic hover image based on category
+// Dynamic hover image based on category (desktop only)
 document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('.circle-item');
   const centerpieceImg = document.getElementById('center-icon');
@@ -71,4 +71,21 @@ document.addEventListener('DOMContentLoaded', () => {
     //   centerpieceImg.src = `${basePath}/assets/imgs/eyes.svg`;
     // });
   });
+
+  // Inject category icons above each entry on mobile
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    items.forEach(item => {
+      const category = item.getAttribute('data-category');
+      if (category) {
+        const icon = document.createElement('img');
+        icon.src = `${basePath}/assets/imgs/${category}.svg`;
+        icon.alt = category;
+        icon.className = 'circle-icon-mobile';
+
+        item.insertBefore(icon, item.firstChild);
+      }
+    });
+  }
 });

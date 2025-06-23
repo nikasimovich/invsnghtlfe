@@ -65,6 +65,14 @@ h3 {
   letter-spacing: .5px;
 }
 
+.circle-icon-mobile {
+  display: block;
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
 .subtitle {
   font-family:"Ivory-BoldItalic", times;
   font-weight:normal;
@@ -75,6 +83,13 @@ span.faded {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--light);
   color: var(--dark);
+}
+
+.circle-icon-mobile {
+  align-items: center;
+  justify-content: center;
+  opacity: 100;
+  display: inline;
 }
 
 /* Map Styles */
@@ -386,6 +401,14 @@ footer {
       animation: none; /* Optional: remove rotation on mobile */
     }
 
+    h1{
+      font-size: 40px;
+    }
+
+#center-icon {
+  display:none;
+}
+
 
 /*MOBILE map*/
 
@@ -422,3 +445,9 @@ footer img, a {
 }
 
 }
+
+
+@media (min-width: 769px) {
+  .circle-icon-mobile {
+    display: none;
+  }

@@ -9,17 +9,19 @@
 
   <div class="circle-wrapper">
     <div class="circle">
-      {% for post in collections.essays %}
-        <a 
-          href="{{ post.data.page.url | url }}" 
-          class="circle-item item-{{ loop.index }}" 
-          data-category="{{ post.data.category }}"
-        >
-          <span class="index-number">{{ post.data.order }}</span>
-          <span class="title">{{ post.data.title }}</span><br>
-          <span class="author">{{ post.data.author }}</span>
-        </a>
-      {% endfor %}
+    {% assign sortedEssays = collections.essays | sort(attribute='data.order') %}
+    {% for post in sortedEssays %}
+      <a 
+        href="{{ post.data.page.url | url }}" 
+        class="circle-item item-{{ loop.index }}" 
+        data-category="{{ post.data.category }}"
+      >
+        <img class="circle-icon" src="{{ ('/assets/imgs/' + post.data.category + '.svg') | url }}" alt="{{ post.data.category }}">
+        <span class="index-number">{{ post.data.order }}</span>
+        <span class="title">{{ post.data.title }}</span><br>
+        <span class="author">{{ post.data.author }}</span>
+      </a>
+    {% endfor %}
       <div class="centerpiece" id="centerpiece">
         <img id="center-icon" src="{{ '/assets/imgs/blood.svg' | url }}" alt="Center icon">
       </div>
