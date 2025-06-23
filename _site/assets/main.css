@@ -67,10 +67,9 @@ h3 {
 
 .circle-icon-mobile {
   display: block;
-  width: 50px;
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
-  opacity: 0.6;
 }
 
 .subtitle {
@@ -391,6 +390,10 @@ footer {
     position: relative;
   }
 
+.circle-icon {
+  display:none;
+}
+
   .circle-item {
       position: relative;
       width: 90%;
@@ -448,6 +451,6 @@ footer img, a {
 
 
 @media (min-width: 769px) {
-  .circle-icon-mobile {
+  img.circle-icon, .circle-icon-mobile {
     display: none;
   }

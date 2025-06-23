@@ -9,7 +9,8 @@
 
   <div class="circle-wrapper">
     <div class="circle">
-    {% assign sortedEssays = collections.essays | sort(attribute='data.order') %}
+    {% set sortedEssays = collections.essays | sort(attribute='data.order') %}
+
     {% for post in sortedEssays %}
       <a 
         href="{{ post.data.page.url | url }}" 
