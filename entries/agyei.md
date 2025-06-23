@@ -165,7 +165,7 @@ The woman’s back straightens up. “You ask her.” She points at him with her
 I shake my head until tears fall down my cheeks. I want to say something. I don’t want to have a number. A maid walks in and turns on the light. She starts her vacuum. I rush out behind her. I jump over the wire. 
 </div>
 <div class="nightType">
-<h3>6.</h3> 
+<h3 class="space">Six</h3> 
 I walk out on the deck. The last of night is bleeding into orange. I’m still stumbling off my spritzes and coughing. I kick off my sandals. The air is brisk and salty. I’m shoving it into my nose. My lips are cracking. I lick down the flakes. My wet soles flop along the deck. I slide my hand along the cold rail.
 
 <blockquote>I’m thinking about the waffles at the buffet. The heat of syrup and crunchy batter hard against my slick tongue like my tensing back against a silk sheet.</blockquote>
