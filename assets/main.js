@@ -77,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (isMobile) {
     items.forEach(item => {
+      // Prevent duplicates on refresh or resize
+      if (item.querySelector('.circle-icon-mobile')) return;
+
       const category = item.getAttribute('data-category');
       if (category) {
         const icon = document.createElement('img');
@@ -88,4 +91,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
 });
