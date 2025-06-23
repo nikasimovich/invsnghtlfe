@@ -1,0 +1,21 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<div class="parentWrap">
+  <div class="titleWrap interior">
+    <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
+    <p class="subtitle item">Open from 12 to 6am</p>
+  </div>
+
+  <div class="essay">
+    {{ content | safe }}
+  </div>
+</div>
+
+<div class="titleWrap interior">
+  <a href="{{ '/' | url }}">
+    <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
+  </a>
+</div>
+
+{% endblock %}

@@ -18,6 +18,10 @@ body {
   overflow-x:hidden;
 }
 
+.masthead, .about {
+  text-align:center;
+}
+
 a {
   color: var(--light);
 }
@@ -80,6 +84,18 @@ h3 {
   font-family:"Ivory-BoldItalic", times;
   font-weight:normal;
   margin-top: 10px;
+}
+
+.essay p {
+  margin-bottom: 0;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+li {
+  margin-bottom: 15px;
 }
 
 span.faded {
