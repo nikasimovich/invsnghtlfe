@@ -1,11 +1,11 @@
 ---
 title: Four Kinds of Night 
 author: Mikayla Emerson
-date: 2025-06-04
+date: 2025-06-03
 tags: essays
 category: blood
 altimg: drink
-order: 7
+order: 8
 layout: essay.njk
 ---
 <div class="nightType">

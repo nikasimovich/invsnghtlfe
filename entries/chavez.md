@@ -5,7 +5,7 @@ date: 2025-06-01
 tags: essays
 category: buried
 altimg: diamondalt
-order: 8
+order: 1
 layout: essay.njk
 ---
 

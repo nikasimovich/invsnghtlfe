@@ -1,11 +1,11 @@
 ---
 title: The Big Light
 author: Lillian Heckler
-date: 2025-06-09
+date: 2025-06-04
 tags: essays
 category: blood
 altimg: goblet
-order: 2
+order: 7
 layout: essay.njk
 ---
 
