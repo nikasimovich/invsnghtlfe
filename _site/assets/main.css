@@ -8,6 +8,11 @@ html, body {
   overflow-x: hidden;
 }
 
+body[data-page="/closed/"] {
+  background-color: #000;
+  padding: 50px;
+}
+
 body {
   background-color: var(--dark);
   color:  var(--light);
@@ -20,6 +25,10 @@ body {
 
 .masthead, .about {
   text-align:center;
+}
+
+.masthead.closed {
+  border: 10px double;
 }
 
 a {
@@ -54,6 +63,14 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size:22px;
+}
+
+.closed {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 }
 
 .nightType {
@@ -92,6 +109,36 @@ h3 {
 
 .about {
   margin-top: 50px;
+}
+
+.closedimg img {
+  margin-right: 10px;
+  height: 100px;
+  animation: subtleTilt 1s ease-in-out infinite;
+}
+
+#easterEgg {
+  padding: 20px;
+  justify-content:center;
+  align-items:center;
+  display: flex;
+  margin-top: 50px;
+}
+
+@keyframes subtleTilt {
+  0%   { transform: rotate(-1deg); }
+  50%  { transform: rotate(1deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+#easterEgg img {
+    height:12px;
+    cursor: pointer;
+    animation: subtleTilt 1s ease-in-out infinite;
+}
+
+.closed {
+  font-family:"Ivory-BoldItalic", times;
 }
 
 li {
@@ -276,9 +323,11 @@ blockquote {
 }
 
 footer {
-  display:flex;
-  justify-content:space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   padding: 50px;
+  text-align: center;
 }
 
 
@@ -453,14 +502,23 @@ footer {
 }
 
 footer {
+  display:flex;
   flex-direction: column;
   justify-content:center;
   align-items:center;
   margin-top:10%;
 }
 
+.closed h2 {
+  font-size: 20px;
+}
+
+.masthead.closed {
+    padding: 20px;
+}
+
 footer img, a {
-  margin-bottom:25px;
+  padding: 10px;
 }
 
 .interior {

@@ -8,8 +8,23 @@
   <meta property="og:image" content="/invsnghtlfe/assets/imgs/sharingimg.png">
   <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
 </head>
-<body data-base="/invsnghtlfe/">
+<body data-base="/invsnghtlfe/" data-page="/entries/tierney/">
   <script src="/invsnghtlfe/assets/main.js" defer></script>
+  <script>
+  const now = new Date();
+const hour = now.getHours();
+const params = new URLSearchParams(window.location.search);
+const cracked = params.has('cracked');
+
+// If NOT 12–6am AND user hasn't come through the cracked door, redirect to /closed
+if (!(hour >= 0 && hour < 6) && !cracked) {
+  if (window.location.pathname === '/') {
+    window.location.href = '/closed/';
+  }
+}
+
+</script>
+
   
 <article class="essay">
   <img class="catimessay" src="/invsnghtlfe/assets/imgs/white.svg" alt="white">

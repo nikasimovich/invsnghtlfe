@@ -1,0 +1,24 @@
+{% extends "base.njk" %}
+
+{% block content %}
+  <div class="masthead closed">
+    <div class="closedimg">
+      <img src="{{ '/assets/imgs/club.svg' | url }}">
+      <img src="{{ '/assets/imgs/drink.svg' | url }}">
+      <img src="{{ '/assets/imgs/sparkle-heart.svg' | url }}">
+    </div>
+    <h2>Sorry, the Invisible Nightlife Review is closed.<br/>
+    We’re open daily from 12am to 6am.<br/>Check back then...</h2>
+
+  </div>
+
+  <!-- Easter egg trigger -->
+  <div id="easterEgg"><img src="{{ '/assets/imgs/star.svg' | url }}"></div>
+
+  <script>
+    document.getElementById('easterEgg').addEventListener('click', function () {
+      alert("You stumbled upon a cracked door with light spilling out. Intrigued, you walk towards it and enter...");
+      window.location.href = '/?cracked=1';
+    });
+  </script>
+{% endblock %}
