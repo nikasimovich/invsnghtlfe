@@ -10,20 +10,22 @@
 </head>
 <body data-base="/invsnghtlfe/" data-page="/entries/emerson/">
   <script src="/invsnghtlfe/assets/main.js" defer></script>
-  <script>
-  const now = new Date();
-const hour = now.getHours();
-const params = new URLSearchParams(window.location.search);
-const cracked = params.has('cracked');
+ <script>
+   const now = new Date();
+   const hour = now.getHours();
+   const params = new URLSearchParams(window.location.search);
+   const cracked = params.has('cracked');
 
-// If NOT 12–6am AND user hasn't come through the cracked door, redirect to /closed
-if (!(hour >= 0 && hour < 6) && !cracked) {
-  if (window.location.pathname === '/') {
-    window.location.href = '/closed/';
-  }
-}
+   const pathname = window.location.pathname;
+   const isIndex = pathname === '/' || pathname.endsWith('/index.html');
 
-</script>
+   // Check if it's NOT between 12am and 6am, and not cracked
+   if (!(hour >= 0 && hour < 6) && !cracked && isIndex) {
+     // Build a relative redirect (preserves whatever the base path is)
+     window.location.href = pathname.replace(/\/index\.html$/, '') + 'closed/';
+   }
+ </script>
+
 
   
 <article class="essay">
