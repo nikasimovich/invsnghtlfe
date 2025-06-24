@@ -18,7 +18,7 @@
   <script>
     document.getElementById('easterEgg').addEventListener('click', function () {
       alert("You stumbled upon a cracked door with light spilling out. Intrigued, you walk towards it and enter...");
-      window.location.href = '/?cracked=1';
+      window.location.href = window.location.pathname.replace(/\/closed\/$/, '/') + '?cracked=1';
     });
   </script>
 {% endblock %}
