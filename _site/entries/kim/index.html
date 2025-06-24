@@ -10,21 +10,32 @@
 </head>
 <body data-base="/invsnghtlfe/" data-page="/entries/kim/">
   <script src="/invsnghtlfe/assets/main.js" defer></script>
- <script>
-   const now = new Date();
-   const hour = now.getHours();
-   const params = new URLSearchParams(window.location.search);
-   const cracked = params.has('cracked');
+  <script>
+    (function() {
+      const now = new Date();
+      const hour = now.getHours();
+      const params = new URLSearchParams(window.location.search);
+      const cracked = params.has('cracked');
 
-   const pathname = window.location.pathname;
-   const isIndex = pathname === '/' || pathname.endsWith('/index.html');
+      const pathname = window.location.pathname;
 
-   // Check if it's NOT between 12am and 6am, and not cracked
-   if (!(hour >= 0 && hour < 6) && !cracked && isIndex) {
-     // Build a relative redirect (preserves whatever the base path is)
-     window.location.href = pathname.replace(/\/index\.html$/, '') + 'closed/';
-   }
- </script>
+      // Normalize trailing slashes
+      const cleanPath = pathname.replace(/\/index\.html$/, '/');
+
+      // Check if this is the homepage (any root path)
+      const isHome = cleanPath === '/' || cleanPath === window.location.origin + '/';
+
+      // Detect if path ends in a slash only (e.g., /, /project/, /subdir/)
+      const pathSegments = pathname.split('/').filter(Boolean);
+      const isLikelyHomepage = pathSegments.length <= 1; // e.g., '', 'invsnghtlfe'
+
+      // If not between 12–6am and not cracked and likely homepage
+      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage) {
+        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
+        window.location.href = base + 'closed/';
+      }
+    })();
+  </script>
 
 
   
