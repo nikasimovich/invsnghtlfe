@@ -18,14 +18,14 @@ layout: essay.njk
 <h3>Neverending Nights</h3>
 <span class="special">Before</span> 
 
-Because you were once five years old. Because you once also believed in disappearing acts. And miracles. And the Fool’s Journey. Because you fell for it. Because a blinking light at the center of town is goodbye. And a gas station means you have a long way to go. Because home is the first Hell. A dirt road. A big car going nowhere. Because it’s your right to be left. Because every scenario ends with you on a sidewalk. And every night begins with why.
+Because you were once five years old. Because you once also believed in disappearing acts. And miracles. And the Fool’s Journey. Because you fell for it. Because a blinking light at the center of town is goodbye. And a gas station means you have a long way to go. Because home is the first Hell. A dirt road. A big car going nowhere. Because it’s your right to be left. Because every scenario ends with you on a sidewalk. And every night begins with why. 
 </div>
 
 <div class="nightType">
 <h3>Blood Nights</h3>
 <span class="special">East Village</span>
 
-Because you kissed the girl who left blood confetti in the snow. Because you can’t hate her for it. Because mouth to mouth feels like resuscitation. IV drip bag and marred cuticles. Because the iron-tang tastes like the other side of a trapdoor. The street numbers turn to letters turn to wasted postage. Think of the red on your bottom lip as a souvenir, an I wish you were here. 
+Because you kissed the girl who left blood confetti in the snow. Because you can’t hate her for it. Because mouth to mouth feels like resuscitation. IV drip bag and marred cuticles. Because the iron-tang tastes like the other side of a trapdoor. The street numbers turn to letters turn to wasted postage. Think of the red on your bottom lip as a souvenir, an <span class="special">I wish you were here</span>.
 </div>
 
 <div class="nightType">
@@ -39,14 +39,14 @@ Because you’re trying not to slip into the Hudson and freeze over like New Yea
 <h3>Blood Nights II</h3>
 <span class="special">Homecrest</span>
 
-Because they never invite you to the drag races on Bedford. Because you have to smell the tires anyway. Because one night a grey Ferrari Spider flies past you, and you, tequila drunk thinking do or die, want to fly too. The sidewalk in South Brooklyn pulls up and down with every house. It’s not flat like the paved road. You pedal anyway. Because you wait for the crash. You want the crash, you always have.The handlebars smash. The bumper melts like angels in the snow. The palms reach out. The tarmac kisses you like it wants you here. You don’t feel it, but you almost can. You consider the nowhere. 
+Because they never invite you to the drag races on Bedford. Because you have to smell the tires anyway. Because one night a grey Ferrari Spider flies past you, and you, tequila drunk thinking do or die, want to fly too. The sidewalk in South Brooklyn pulls up and down with every house. It’s not flat like the paved road. You pedal anyway. Because you wait for the crash. You want the crash, you always have.The handlebars smash. The bumper melts like angels in the snow. The palms reach out. The tarmac kisses you like it wants you here. You don’t feel it, but you almost can. You consider the nowhere.
 </div>
 
 <div class="nightType">
 <h3>Buried Nights</h3>
 <span class="special">Hell’s Kitchen</span>
 
-Because you’d hug a landmine if you could. Because Lincoln Tunnel is only empty when something’s wrong. Because congestion is just another word for sick. Because the trash gets pulled out onto the street. Because even the flies won’t touch you. Because this is falling. Because they’ve made Hell liveable, and doesn’t that mean loveable? Because you swallow stones thinking you’ll be full and complete and whole. Because you want to believe this is all right.
+Because you’d hug a landmine if you could. Because Lincoln Tunnel is only empty when something’s wrong. Because congestion is just another word for sick. Because the trash gets pulled out onto the street. Because even the flies won’t touch you. Because this is falling. Because they’ve made Hell liveable, and doesn’t that mean loveable? Because you swallow stones thinking you’ll be full and complete and whole. Because you want to believe this is all right. 
 </div>
 
 <div class="nightType">

@@ -18,24 +18,20 @@
       const cracked = params.has('cracked');
 
       const pathname = window.location.pathname;
-
-      // Normalize trailing slashes
       const cleanPath = pathname.replace(/\/index\.html$/, '/');
-
-      // Check if this is the homepage (any root path)
-      const isHome = cleanPath === '/' || cleanPath === window.location.origin + '/';
-
-      // Detect if path ends in a slash only (e.g., /, /project/, /subdir/)
       const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1; // e.g., '', 'invsnghtlfe'
+      const isLikelyHomepage = pathSegments.length <= 1;
 
-      // If not between 12–6am and not cracked and likely homepage
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage) {
+      const alreadyClosed = pathname.includes('/closed');
+
+      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
+      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
         const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
         window.location.href = base + 'closed/';
       }
     })();
   </script>
+
 
 
   {% block content %}{% endblock %}
