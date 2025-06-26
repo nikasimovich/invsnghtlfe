@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(".nojekyll");
 
   return {
-    pathPrefix: "", // ✅ use root-relative URLs with no subfolder
     dir: {
       input: ".",
       includes: "_includes",
