@@ -4,33 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Invisible Nightlife Review</title>
-  <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
-  <meta property="og:image" content="/invsnghtlfe/assets/imgs/sharingimg.png">
-  <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
+  <link rel="icon" href="/assets/imgs/favicon.png">
+  <meta property="og:image" content="/assets/imgs/sharingimg.png">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
-<body data-base="/invsnghtlfe/" data-page="/">
-  <script src="/invsnghtlfe/assets/main.js" defer></script>
+<body data-base="/" data-page="/">
+  <script src="/assets/main.js" defer></script>
   <script>
     (function() {
       const now = new Date();
       const hour = now.getHours();
       const params = new URLSearchParams(window.location.search);
       const cracked = params.has('cracked');
-
       const pathname = window.location.pathname;
-      const cleanPath = pathname.replace(/\/index\.html$/, '/');
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1;
 
-      const alreadyClosed = pathname.includes('/closed');
+      const isHome = pathname === '/' || pathname === '/index.html';
+      const isAlreadyClosed = pathname.includes('/closed');
 
-      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
-        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
-        window.location.href = base + 'closed/';
+      if (!(hour >= 0 && hour < 6) && !cracked && isHome && !isAlreadyClosed) {
+        window.location.href = '/closed/';
       }
     })();
   </script>
+
 
 
 
@@ -47,104 +43,104 @@
 
     
       <a 
-        href="/invsnghtlfe/entries/chavez/" 
+        href="/entries/chavez/" 
         class="circle-item item-1" 
         data-category="buried"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/buried.svg" alt="buried">
+        <img class="circle-icon" src="/assets/imgs/buried.svg" alt="buried">
         <span class="index-number">1</span>
         <span class="title">The High Priestess of Paradise</span><br>
         <span class="author">Gabriel Chavez</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/rose/" 
+        href="/entries/rose/" 
         class="circle-item item-2" 
         data-category="neverending"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/neverending.svg" alt="neverending">
+        <img class="circle-icon" src="/assets/imgs/neverending.svg" alt="neverending">
         <span class="index-number">2</span>
         <span class="title">The Smoking Lounge</span><br>
         <span class="author">Celia Rose</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/tierney/" 
+        href="/entries/tierney/" 
         class="circle-item item-3" 
         data-category="white"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/white.svg" alt="white">
+        <img class="circle-icon" src="/assets/imgs/white.svg" alt="white">
         <span class="index-number">3</span>
         <span class="title">DIY Econ</span><br>
         <span class="author">Eva Szilardi-Tierney</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/reilly/" 
+        href="/entries/reilly/" 
         class="circle-item item-4" 
         data-category="buried"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/buried.svg" alt="buried">
+        <img class="circle-icon" src="/assets/imgs/buried.svg" alt="buried">
         <span class="index-number">4</span>
         <span class="title">Traveling Spark</span><br>
         <span class="author">Pete Reilly</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/levitt/" 
+        href="/entries/levitt/" 
         class="circle-item item-5" 
         data-category="neverending"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/neverending.svg" alt="neverending">
+        <img class="circle-icon" src="/assets/imgs/neverending.svg" alt="neverending">
         <span class="index-number">5</span>
         <span class="title">Alienation</span><br>
         <span class="author">Dakota Levitt</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/kim/" 
+        href="/entries/kim/" 
         class="circle-item item-6" 
         data-category="white"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/white.svg" alt="white">
+        <img class="circle-icon" src="/assets/imgs/white.svg" alt="white">
         <span class="index-number">6</span>
         <span class="title">Get Home Safe</span><br>
         <span class="author">Mandy Kim</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/heckler/" 
+        href="/entries/heckler/" 
         class="circle-item item-7" 
         data-category="blood"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/blood.svg" alt="blood">
+        <img class="circle-icon" src="/assets/imgs/blood.svg" alt="blood">
         <span class="index-number">7</span>
         <span class="title">The Big Light</span><br>
         <span class="author">Lillian Heckler</span>
       </a>
     
       <a 
-        href="/invsnghtlfe/entries/emerson/" 
+        href="/entries/emerson/" 
         class="circle-item item-8" 
         data-category="blood"
       >
-        <img class="circle-icon" src="/invsnghtlfe/assets/imgs/blood.svg" alt="blood">
+        <img class="circle-icon" src="/assets/imgs/blood.svg" alt="blood">
         <span class="index-number">8</span>
         <span class="title">Four Kinds of Night</span><br>
         <span class="author">Mikayla Emerson</span>
       </a>
     
       <div class="centerpiece" id="centerpiece">
-        <img id="center-icon" src="/invsnghtlfe/assets/imgs/blood.svg" alt="Center icon">
+        <img id="center-icon" src="/assets/imgs/blood.svg" alt="Center icon">
       </div>
     </div>
   </div>
 </div>
 
   <footer>
-    <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
-    <a href="/invsnghtlfe/masthead/">Masthead</a>
-    <a href="https://www.newschool.edu/"><img src="/invsnghtlfe/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
+    <a href="https://dirt.fyi/"><img src="/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
+    <a href="/masthead/">Masthead</a>
+    <a href="https://www.newschool.edu/"><img src="/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
   </footer>
 </body>
 </html>

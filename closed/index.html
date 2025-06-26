@@ -4,42 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Closed</title>
-  <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
-  <meta property="og:image" content="/invsnghtlfe/assets/imgs/sharingimg.png">
-  <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
+  <link rel="icon" href="/assets/imgs/favicon.png">
+  <meta property="og:image" content="/assets/imgs/sharingimg.png">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
-<body data-base="/invsnghtlfe/" data-page="/closed/">
-  <script src="/invsnghtlfe/assets/main.js" defer></script>
+<body data-base="/" data-page="/closed/">
+  <script src="/assets/main.js" defer></script>
   <script>
     (function() {
       const now = new Date();
       const hour = now.getHours();
       const params = new URLSearchParams(window.location.search);
       const cracked = params.has('cracked');
-
       const pathname = window.location.pathname;
-      const cleanPath = pathname.replace(/\/index\.html$/, '/');
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1;
 
-      const alreadyClosed = pathname.includes('/closed');
+      const isHome = pathname === '/' || pathname === '/index.html';
+      const isAlreadyClosed = pathname.includes('/closed');
 
-      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
-        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
-        window.location.href = base + 'closed/';
+      if (!(hour >= 0 && hour < 6) && !cracked && isHome && !isAlreadyClosed) {
+        window.location.href = '/closed/';
       }
     })();
   </script>
 
 
 
+
   
   <div class="masthead closed">
     <div class="closedimg">
-      <img src="/invsnghtlfe/assets/imgs/club.svg">
-      <img src="/invsnghtlfe/assets/imgs/drink.svg">
-      <img src="/invsnghtlfe/assets/imgs/sparkle-heart.svg">
+      <img src="/assets/imgs/club.svg">
+      <img src="/assets/imgs/drink.svg">
+      <img src="/assets/imgs/sparkle-heart.svg">
     </div>
     <h2>Sorry, the Invisible Nightlife Review is closed.<br/>
     We’re open daily from 12am to 6am.<br/>Check back then...</h2>
@@ -47,7 +43,7 @@
   </div>
 
   <!-- Easter egg trigger -->
-  <div id="easterEgg"><img src="/invsnghtlfe/assets/imgs/star.svg"></div>
+  <div id="easterEgg"><img src="/assets/imgs/star.svg"></div>
 
   <script>
     document.getElementById('easterEgg').addEventListener('click', function () {
@@ -61,9 +57,9 @@
 
 
   <footer>
-    <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
-    <a href="/invsnghtlfe/masthead/">Masthead</a>
-    <a href="https://www.newschool.edu/"><img src="/invsnghtlfe/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
+    <a href="https://dirt.fyi/"><img src="/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
+    <a href="/masthead/">Masthead</a>
+    <a href="https://www.newschool.edu/"><img src="/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
   </footer>
 </body>
 </html>

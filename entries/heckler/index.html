@@ -4,44 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Big Light</title>
-  <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
-  <meta property="og:image" content="/invsnghtlfe/assets/imgs/sharingimg.png">
-  <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
+  <link rel="icon" href="/assets/imgs/favicon.png">
+  <meta property="og:image" content="/assets/imgs/sharingimg.png">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
-<body data-base="/invsnghtlfe/" data-page="/entries/heckler/">
-  <script src="/invsnghtlfe/assets/main.js" defer></script>
+<body data-base="/" data-page="/entries/heckler/">
+  <script src="/assets/main.js" defer></script>
   <script>
     (function() {
       const now = new Date();
       const hour = now.getHours();
       const params = new URLSearchParams(window.location.search);
       const cracked = params.has('cracked');
-
       const pathname = window.location.pathname;
-      const cleanPath = pathname.replace(/\/index\.html$/, '/');
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1;
 
-      const alreadyClosed = pathname.includes('/closed');
+      const isHome = pathname === '/' || pathname === '/index.html';
+      const isAlreadyClosed = pathname.includes('/closed');
 
-      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
-        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
-        window.location.href = base + 'closed/';
+      if (!(hour >= 0 && hour < 6) && !cracked && isHome && !isAlreadyClosed) {
+        window.location.href = '/closed/';
       }
     })();
   </script>
 
 
 
+
   
 <article class="essay">
-  <img class="catimessay" src="/invsnghtlfe/assets/imgs/blood.svg" alt="blood">
-  <a href="/invsnghtlfe/"><span class="essayorder">7</span></a>
+  <img class="catimessay" src="/assets/imgs/blood.svg" alt="blood">
+  <a href="/"><span class="essayorder">7</span></a>
   <h1 class="essay-title">The Big Light</h1>
   <span class="author">By: Lillian Heckler</span>
   <div class="essay-content">
-    <img class="catimessayalt" src="/invsnghtlfe/assets/imgs/goblet.svg" alt="goblet">
+    <img class="catimessayalt" src="/assets/imgs/goblet.svg" alt="goblet">
     <p>This morning, Mark Lord awoke as a fly. The morning before, he also awoke as a fly. In fact, there had never been a morning when he hadn’t awoken as a fly, and there would never be a morning when he wouldn’t awake as a fly, except for the morning after the day that he would eventually die, because then he wouldn’t be much of anything except for dead.</p>
 <p>Mark enjoys being a fly. Buzzing. Darting. Licking windows. Sleeping in rotten wood. The human who owns the house that he lives in leaves enough food scraps in the kitchen to feed Mark for several lifetimes, which isn’t saying much for a fly because he probably won’t make it until next autumn.</p>
 <p>Before this house, Mark lived in a different house in another place. He didn’t like that house as much. There was less to do and fewer flies to do it with. He’d cross paths with the same three insects every few hours, and they weren’t what Mark would consider talkative. The human living there seemed not to, well, live there, which meant there weren’t as many flesh particles or condensation droplets on the windows and the walls and the tiles in the bathroom. This made the surfaces less ripe for licking, which was quite unsatisfying for Mark. He would lie in a dark, damp corner of decaying baseboard in the attic, restless, and think about dying. By palm, by book, by swatter, by tissue, by car.</p>
@@ -87,15 +83,15 @@
   </div>
 </article>
 <div class="titleWrap interior">
-  <a href="/invsnghtlfe/">
+  <a href="/">
     <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
   </a>
 </div>
 
   <footer>
-    <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
-    <a href="/invsnghtlfe/masthead/">Masthead</a>
-    <a href="https://www.newschool.edu/"><img src="/invsnghtlfe/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
+    <a href="https://dirt.fyi/"><img src="/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
+    <a href="/masthead/">Masthead</a>
+    <a href="https://www.newschool.edu/"><img src="/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
   </footer>
 </body>
 </html>
