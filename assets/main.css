@@ -217,6 +217,7 @@ audio {
 
 hr {
   border-top:5px dotted;
+  margin-top: 25px;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
