@@ -18,24 +18,20 @@
       const cracked = params.has('cracked');
 
       const pathname = window.location.pathname;
-
-      // Normalize trailing slashes
       const cleanPath = pathname.replace(/\/index\.html$/, '/');
-
-      // Check if this is the homepage (any root path)
-      const isHome = cleanPath === '/' || cleanPath === window.location.origin + '/';
-
-      // Detect if path ends in a slash only (e.g., /, /project/, /subdir/)
       const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1; // e.g., '', 'invsnghtlfe'
+      const isLikelyHomepage = pathSegments.length <= 1;
 
-      // If not between 12–6am and not cracked and likely homepage
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage) {
+      const alreadyClosed = pathname.includes('/closed');
+
+      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
+      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
         const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
         window.location.href = base + 'closed/';
       }
     })();
   </script>
+
 
 
   
@@ -59,7 +55,7 @@
 <div class="nightType">
 <h3>Blood Nights</h3>
 <span class="special">East Village</span>
-<p>Because you kissed the girl who left blood confetti in the snow. Because you can’t hate her for it. Because mouth to mouth feels like resuscitation. IV drip bag and marred cuticles. Because the iron-tang tastes like the other side of a trapdoor. The street numbers turn to letters turn to wasted postage. Think of the red on your bottom lip as a souvenir, an I wish you were here.</p>
+<p>Because you kissed the girl who left blood confetti in the snow. Because you can’t hate her for it. Because mouth to mouth feels like resuscitation. IV drip bag and marred cuticles. Because the iron-tang tastes like the other side of a trapdoor. The street numbers turn to letters turn to wasted postage. Think of the red on your bottom lip as a souvenir, an <span class="special">I wish you were here</span>.</p>
 </div>
 <div class="nightType">
 <h3>White Nights</h3>
