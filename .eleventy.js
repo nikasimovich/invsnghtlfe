@@ -1,24 +1,21 @@
 const { DateTime } = require("luxon");
 
-const isProd = process.env.ELEVENTY_ENV === "production";
-
 module.exports = function (eleventyConfig) {
-  // Filters
   eleventyConfig.addFilter("date", (dateObj, format = "LLLL d, yyyy") => {
     return DateTime.fromJSDate(dateObj).toFormat(format);
   });
 
-  // Collections
   eleventyConfig.addCollection("essays", function (collection) {
     return collection.getFilteredByTag("essays").reverse();
   });
 
-  // Static Assets
+  // ✅ Make sure these passthrough copies are here:
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy(".nojekyll");
 
-  // Use pathPrefix based on environment
   return {
-    pathPrefix: isProd ? "/invsnghtlfe" : "/",
+    pathPrefix: "", // ✅ use root-relative URLs with no subfolder
     dir: {
       input: ".",
       includes: "_includes",

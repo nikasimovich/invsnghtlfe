@@ -16,21 +16,17 @@
       const hour = now.getHours();
       const params = new URLSearchParams(window.location.search);
       const cracked = params.has('cracked');
-
       const pathname = window.location.pathname;
-      const cleanPath = pathname.replace(/\/index\.html$/, '/');
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1;
 
-      const alreadyClosed = pathname.includes('/closed');
+      const isHome = pathname === '/' || pathname === '/index.html';
+      const isAlreadyClosed = pathname.includes('/closed');
 
-      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
-        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
-        window.location.href = base + 'closed/';
+      if (!(hour >= 0 && hour < 6) && !cracked && isHome && !isAlreadyClosed) {
+        window.location.href = '/closed/';
       }
     })();
   </script>
+
 
 
 

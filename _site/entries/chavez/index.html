@@ -4,44 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The High Priestess of Paradise</title>
-  <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
-  <meta property="og:image" content="/invsnghtlfe/assets/imgs/sharingimg.png">
-  <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
+  <link rel="icon" href="/assets/imgs/favicon.png">
+  <meta property="og:image" content="/assets/imgs/sharingimg.png">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
-<body data-base="/invsnghtlfe/" data-page="/entries/chavez/">
-  <script src="/invsnghtlfe/assets/main.js" defer></script>
+<body data-base="/" data-page="/entries/chavez/">
+  <script src="/assets/main.js" defer></script>
   <script>
     (function() {
       const now = new Date();
       const hour = now.getHours();
       const params = new URLSearchParams(window.location.search);
       const cracked = params.has('cracked');
-
       const pathname = window.location.pathname;
-      const cleanPath = pathname.replace(/\/index\.html$/, '/');
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1;
 
-      const alreadyClosed = pathname.includes('/closed');
+      const isHome = pathname === '/' || pathname === '/index.html';
+      const isAlreadyClosed = pathname.includes('/closed');
 
-      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
-        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
-        window.location.href = base + 'closed/';
+      if (!(hour >= 0 && hour < 6) && !cracked && isHome && !isAlreadyClosed) {
+        window.location.href = '/closed/';
       }
     })();
   </script>
 
 
 
+
   
 <article class="essay">
-  <img class="catimessay" src="/invsnghtlfe/assets/imgs/buried.svg" alt="buried">
-  <a href="/invsnghtlfe/"><span class="essayorder">1</span></a>
+  <img class="catimessay" src="/assets/imgs/buried.svg" alt="buried">
+  <a href="/"><span class="essayorder">1</span></a>
   <h1 class="essay-title">The High Priestess of Paradise</h1>
   <span class="author">By: Gabriel Chavez</span>
   <div class="essay-content">
-    <img class="catimessayalt" src="/invsnghtlfe/assets/imgs/diamondalt.svg" alt="diamondalt">
+    <img class="catimessayalt" src="/assets/imgs/diamondalt.svg" alt="diamondalt">
     <p>Of the events that led to her confinement she can only speculate: Had the three-legged stools the nightclub stored beneath the DJ booth been any color but the black that matched the darkness perhaps she’d be free—chastised for trespassing, yes, and steered out to the street—but free.</p>
 <p>Had she only left a trace of her presence above, a bottle or a handbag set like bait beside the decks, perhaps a barback would have seen her trembling shadow and removed her from this self-made isolation. Had she been clumsier, drunker, slower to catch the fire extinguisher she knocked over, the echo of metal on plywood would have revealed her to security, whose impatient glance around the curtained dance floor could not discern her.</p>
 <p>What froze her to the spot, she wondered, what instinct kept her still and quiet against the promise of detection? She felt no thrill, no slick pleasure in her trespass, no fear even but rather the strange tranquility of having discovered an unmarked cave by a familiar sea. The star-shaped earring her boyfriend wanted back lured her under, its broken clasp a fated beckoning to the sticky cables and hardened limes beneath the DJ booth at Amulet.</p>
@@ -64,15 +60,15 @@
   </div>
 </article>
 <div class="titleWrap interior">
-  <a href="/invsnghtlfe/">
+  <a href="/">
     <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
   </a>
 </div>
 
   <footer>
-    <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
-    <a href="/invsnghtlfe/masthead/">Masthead</a>
-    <a href="https://www.newschool.edu/"><img src="/invsnghtlfe/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
+    <a href="https://dirt.fyi/"><img src="/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
+    <a href="/masthead/">Masthead</a>
+    <a href="https://www.newschool.edu/"><img src="/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
   </footer>
 </body>
 </html>

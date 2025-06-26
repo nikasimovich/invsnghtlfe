@@ -4,44 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Smoking Lounge</title>
-  <link rel="icon" href="/invsnghtlfe/assets/imgs/favicon.png">
-  <meta property="og:image" content="/invsnghtlfe/assets/imgs/sharingimg.png">
-  <link rel="stylesheet" href="/invsnghtlfe/assets/main.css">
+  <link rel="icon" href="/assets/imgs/favicon.png">
+  <meta property="og:image" content="/assets/imgs/sharingimg.png">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
-<body data-base="/invsnghtlfe/" data-page="/entries/rose/">
-  <script src="/invsnghtlfe/assets/main.js" defer></script>
+<body data-base="/" data-page="/entries/rose/">
+  <script src="/assets/main.js" defer></script>
   <script>
     (function() {
       const now = new Date();
       const hour = now.getHours();
       const params = new URLSearchParams(window.location.search);
       const cracked = params.has('cracked');
-
       const pathname = window.location.pathname;
-      const cleanPath = pathname.replace(/\/index\.html$/, '/');
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const isLikelyHomepage = pathSegments.length <= 1;
 
-      const alreadyClosed = pathname.includes('/closed');
+      const isHome = pathname === '/' || pathname === '/index.html';
+      const isAlreadyClosed = pathname.includes('/closed');
 
-      // If not between 12–6am, not cracked, is homepage-ish, and not already redirected
-      if (!(hour >= 0 && hour < 6) && !cracked && isLikelyHomepage && !alreadyClosed) {
-        const base = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
-        window.location.href = base + 'closed/';
+      if (!(hour >= 0 && hour < 6) && !cracked && isHome && !isAlreadyClosed) {
+        window.location.href = '/closed/';
       }
     })();
   </script>
 
 
 
+
   
 <article class="essay">
-  <img class="catimessay" src="/invsnghtlfe/assets/imgs/neverending.svg" alt="neverending">
-  <a href="/invsnghtlfe/"><span class="essayorder">2</span></a>
+  <img class="catimessay" src="/assets/imgs/neverending.svg" alt="neverending">
+  <a href="/"><span class="essayorder">2</span></a>
   <h1 class="essay-title">The Smoking Lounge</h1>
   <span class="author">By: Celia Rose</span>
   <div class="essay-content">
-    <img class="catimessayalt" src="/invsnghtlfe/assets/imgs/heartalt.svg" alt="heartalt">
+    <img class="catimessayalt" src="/assets/imgs/heartalt.svg" alt="heartalt">
     <div class="nightType">
 <h3 class="space">One</h3>
 My mother forks into her lobster as she watches me mow my filet mignon into slices, “They undercooked it. I can have them take it back” She insists, her first bite sits plump and upright on her fork, butter and juices running down and through the prongs. The yellow inching toward her palm.
@@ -139,15 +135,15 @@ I walk out on the deck. The last of night is bleeding into orange. I’m still s
   </div>
 </article>
 <div class="titleWrap interior">
-  <a href="/invsnghtlfe/">
+  <a href="/">
     <h1 class="item"><span class="faded">Invisible</span> Nightlife Review</h1>
   </a>
 </div>
 
   <footer>
-    <a href="https://dirt.fyi/"><img src="/invsnghtlfe/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
-    <a href="/invsnghtlfe/masthead/">Masthead</a>
-    <a href="https://www.newschool.edu/"><img src="/invsnghtlfe/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
+    <a href="https://dirt.fyi/"><img src="/assets/imgs/dirt-logo.svg" alt="Dirt logo"></a>
+    <a href="/masthead/">Masthead</a>
+    <a href="https://www.newschool.edu/"><img src="/assets/imgs/newschool-logo.svg" alt="New School logo"></a>
   </footer>
 </body>
 </html>
