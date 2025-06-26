@@ -1,6 +1,6 @@
 ---
 title: The Smoking Lounge
-author: Diamond Agyei
+author: Celia Rose
 date: 2025-05-30
 tags: essays
 category: neverending
@@ -10,51 +10,52 @@ layout: essay.njk
 ---
 <div class="nightType">
 <h3 class="space">One</h3>
-My mother forks into her lobster as she watches me mow down my filet mignon into slices, “They undercooked it. I can have them take it back” She insists, her first bite sits plump and upright on her fork, butter and juices running down and through the prongs.
+My mother forks into her lobster as she watches me mow my filet mignon into slices, “They undercooked it. I can have them take it back” She insists, her first bite sits plump and upright on her fork, butter and juices running down and through the prongs. The yellow inching toward her palm.
 
-I suck in a deep breath and land my bite between my teeth, staring back and nodding as my first taste slides down my throat. “It’s medium. Like I asked.”
+I suck in a deep breath and land my bite between my teeth, staring back and nodding as the first taste passes my tongue. “It’s medium. Like I asked.”
 
-She lets out one impassioned scoff, “If you say so.” She bites down and continues her eye contact and thought with a muffle as her chew lies in wait of swallow, “Yesterday, your dad’s steak was tough. I couldn’t even listen to him eat it.”
+She lets out one impassioned scoff, “If you say so.” She bites down and continues her eye contact. “Yesterday, your dad’s steak was tough. I couldn’t even listen to him eat it.”
 
 “Mine is okay today. But it’s nothing to write home about.” My father qualifies.
 
-“It’s the best bang for our buck for the plan we have. Where else do we get to eat steak every night?” 
+“It’s the best bang for our buck with the plan we have. Where else do we get to eat steak every night?” 
 
-My father is simple in response, “True.” 
+My father is simple when he answers me, “True.” 
 
-“Are you packed? You need to be ready to go tomorrow.” My mother’s mouth is still full.
+“Are you packed? You need to be ready to go tomorrow.” My mother’s cheeks are still round with her meal.
 
-My lie flows through me, “Finished before dinner.”
+The lie flows through me, “Finished before dinner.”
+
 </div>
 <div class="nightType">
 <h3 class="space">Two</h3>
-Black water glimmers and rolls behind the port window as light creeps toward my lips. Plastic slides around in my palm sweat, bouncing into my lap of cotton after my cigarette latches onto the flame. Sucking upward, a stale stream of grey tousles the hairs along my nostril.
+Black water glimmers and rolls behind the port window as light creeps toward my lips. Plastic slides around in my palm sweat, bouncing into my lap after my cigarette latches onto the flame. Sucking upward, a stale stream of grey tousles the hairs along my nostril.
 
 The man next to me stretches his legs out into a ray, the relief of his popping bones pushing out a groan of glory. He vacuums the foam off the head dripping in his hands. Grey mustache with a thin line of white at the edge. His limp hand wafts his cigarette around his wrinkled forehead.
 
-A thick sphere rolls down his throat. <blockquote>Head held up with sighs of refreshment, “I love alcohol…I would drink gasoline because it has alcohol in it!”</blockquote>
-
-His hearty, lengthy laugh swallows the room until the whip of a cough sends him back into his armchair. Hand rising from his den, he exhales, “Richard.” We clasp our palms together in a firm wobble as I reveal my name. 
+A thick sphere rolls down his throat <blockquote>Head held up with sighs of refreshment, “I love alcohol…I would drink gasoline because it has alcohol in it!”</blockquote>
 
 His chin points up at the chandelier in the center of the room. Clear, dripping crystals twinkle above his foamy lips, “I’m practically retired now. All I ever do is go on vacation!”
+His hearty, lengthy laugh swallows the room until the whip of a cough sends him back into his armchair. Hand rising from his den, he exhales, “Richard.” We clasp our palms together in a firm wobble as I reveal my name. 
 
 “I sell antiques in Chinatown—my daughter runs the store now. It’s passive income for me.” He hands me a card from his breast pocket, “Easy work for her. Our customers are very easy to please. Stop by sometime. We have the best couches in the city!”
 
-A stumbling crowd of middle-aged women in gaudy, pink party sashes stumbles in as he explains the logistics of early retirement to me. I forget it as quick as I learn it. 
+A crowd of middle-aged women in gaudy, pink party sashes and one cape stumble in as he explains the logistics of early retirement to me. I forget it as quick as I learn it. 
 
 “I have couches older than your mom that are softer than this! They think we’ll smoke less if we’re uncomfortable…”
 
 I nod. They must.
 
-“…I’ve smoked in Canadian blizzards. In dirty barns. Nowhere to sit but a bucket while horses shit and pigs screech like bitches in my ear. But still, I could have 5 cigarettes back to back to back in there. It’s impossible not to relax with this in my hand—”
+“…I’ve smoked in Canadian blizzards. In dirty barns. Nowhere to sit but a bucket while horses shit and pigs screech like bitches in my ear. But still, I could have 50 smokes back to back to back in there. It’s impossible not to relax with this in my hand—”
 
 A scraggly voice yells out from the crowd of women. “Let’s get some music on in here! It’s too quiet, even with me in here!” An ad for weight loss shots softly plays moments after her proclamation. “Can’t even hear some Madonna without being reminded of my place in this world, huh!” Her group’s laughs are soft and scattered. 
 
 “Even with that. I feel fine.” Richard concludes. 
 
-After two more smokes, the waning and refreshing of his lager, and the bridge of “La Isla Bonita”, he excuses himself with a firm  “Well, that’s it for me,” slap on his lap. We shake hands goodbye and he is on his way, bald spot bouncing as he exits the now bumping lounge. 
+After two more smokes, the waning and refreshing of his lager, and the bridge of “La Isla Bonita”, he excuses himself with a firm  “Well, that’s it for me,” slap on his lap. We shake hands goodbye, bald spot bouncing as he exits the now bumping lounge. 
 
 I slink back in my seat and shut my eyes. My lungs tighten from the burning of a Spirit in the corner. 
+
 </div>
 <div class="nightType">
 <h3 class="space">Three</h3>
@@ -72,7 +73,7 @@ I elbow my spritz on my way up. The splash hits my ankle.
 
 “I was going to get another drink anyway. That one was getting warm—” 
 
-“Perfect! I need another soda…maybe instead of tequila, I’ll do vodka! We’ll mingle with everyone when we get back!”
+“Perfect! I need another soda…maybe instead of tequila, I’ll do vodka! We’ll mingle with everyone when we get back!” She gestures to her group. Everyone waves back with limp wrists. The bride, slinked back on the couch in her pink cape, flutters her fingers. 
 
 I wrap my hand in a thick white napkin and sop up my spill with a sweep. The lounge opens into the bar. It overlooks a pool on the deck. The water is a bright crystal blue. <blockquote>I flatten my breasts in my lean against the wood bar as the bartender wrestles the cork off the prosecco with tight, white knuckles.</blockquote> I breathe in my first gulp with the hunger of a shark. The fizz burns my throat. I hack up breath and liquor spit. The woman from the lounge is scraping orange lipstick against her mouth. 
 
@@ -91,6 +92,7 @@ My skin is cold, “Is it so horrible?”
 Her neck retreats until her head is up straight. “It’s not the color of love!”
 
 I blink. “I think you should smoke that cigarette I gave you.” 
+
 </div>
 <div class="nightType">
 <h3 class="space">Four</h3>
@@ -108,11 +110,11 @@ Myself and the man nod in silence.
 
 She slams her bottom down into an armchair. “I came here to set everything aside. To give them another chance and who do they treat me like? Who am I to them?!” The cigarette I gave her is trickling out crumbs of tobacco in the end as she flicks her thumb to turn it on. 
 
-Myself and the man turn to each other. He looks at me as if to ask if I know her. My head shake is soft.
+Myself and the man turn to each other. He looks at me as if to ask if I know her. I shake my head. 
 
 “This is the first time we’ve all seen each other in years since her ex—my best friend—killed himself. She’s mad because I wasn’t mad at him for doing it. Who am I to say no to what he wants? I think people should have the right! If someone feels so hopeless, that that’s the only choice, they should have the right to do it! She never lived like us! She doesn’t know what it takes for some people to be alive.” 
 
-My cheeks are cold. The man pushes more smoke out of his mouth. The woman’s cheeks are hollow as the end of her smoke burns orange. Then her face swells with exhale.
+My cheeks are cold. The man pushes more smoke out of his mouth. The woman’s cheeks are hollow as the end of her smoke burns orange. Then her face swells with an exhale.
 
 “I knew that man from when I was an idiot in the military, sexy guy—”
 
@@ -162,7 +164,8 @@ The woman’s back straightens up. “You ask her.” She points at him with her
 
 “Why the hell wouldn’t you?” The woman looks to me to prove her point. “How many times?”
 
-I shake my head until tears fall down my cheeks. I want to say something. I don’t want to have a number. A maid walks in and turns on the light. She starts her vacuum. I rush out behind her. I jump over the wire. 
+I shake my head until tears fall down my cheeks. I want to say something. I don’t want to have a number. A maid walks in and turns on the light. She starts her vacuum. I rush out behind her. I jump over the cord.
+
 </div>
 <div class="nightType">
 <h3 class="space">Six</h3> 
