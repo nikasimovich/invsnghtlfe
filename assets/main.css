@@ -166,10 +166,22 @@ span.faded {
    filter: hue-rotate(2deg);
 }
 
+.leaflet-popup-content {
+  font-family:  "Ivory-Regular", times; /* fallback to your default body font */
+  font-size: 13px !important;
+  line-height: 1.2;
+}
+
+.popup-title {
+  font-family: "Visual", arial !important;
+  font-size: 13px !important;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
 .leaflet-container {
-    font-family: "Visual", arial !important;
+    /*font-family: "Visual", arial !important;*/
     font-weight: normal !important;
-    font-size: 13px !important;
 }
 
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
