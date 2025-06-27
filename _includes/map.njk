@@ -53,7 +53,12 @@
         onEachFeature: (feature, layer) => {
           const name = feature.properties.name || '';
           const description = feature.properties.description || '';
-          layer.bindPopup(`<strong>${name}</strong><p>${description.replace(/\n/g, '</p><p>')}</p>`);
+          layer.bindPopup(`
+            <div class="popup-content">
+              <div class="popup-title">${name}</div>
+              <div class="popup-description">${description.replace(/\n/g, '</p><p>')}</p>
+            </div>
+          `);
         }
       }).addTo(map);
       });
