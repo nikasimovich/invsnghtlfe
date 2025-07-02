@@ -14,20 +14,11 @@ layout: essay.njk
 Test subject #1, patient zero, the guinea pig. They advertised it as ‘beta-tester,’ which has a nicer ring to it than the only idiot lonely enough to let us blast him off into the unknown. At this point in my too long, too unfulfilling life I had two options: succumb to its demise or forge a new path, the path they gave me. While both intriguing, kinda, (not really), I chose the latter.              
 <pre>+      '    +                        *       
           ' '       '              *      </pre>
-I stuffed the little belongings I had left into my shallow pockets and prepared for my midnight departure. They said no human would be able to survive this. 60 seconds to 120 seconds max was the estimated time I would endure, but I am not human, nor am I one to abide by the chains of confinement others have placed on me. Onwards and upwards, I ascended 666,666,666 miles, straight up past the clouds, through the stars, breaking the sound waves and gasping for air as I rose above the Kármán line.
+I stuffed the little belongings I had left into my shallow pockets and prepared for my midnight departure. They said no human would be able to survive this. 60 seconds to 120 seconds max was the estimated time I would endure, but I am not human, nor am I one to abide by the chains of confinement others have placed on me. Onwards and upwards, I ascended 666,666,666 miles, straight up past the clouds, through the stars, breaking the sound barrier and gasping for air as I rose above the Kármán line.
 <pre>                     .                
                         ' '                          '.          .            + 
       o         .                                 .        .       .    
-</pre>
-       When I touched ground on the frozen desert, dry, barren, and covered in dust, time had stopped—or at least time in the way that I am used to feeling it. The desert, deserted. It was awfully quiet, stillness reigned. It had been a long time since I felt as serene as I did trudging through the static haze and red rock-covered floor. Still, the silence here made me long for the subsonic hum of a weathered jukebox I once knew, the sticky floors, and the bartender who never let me see the bottom of my glass. For a split second I missed the ghost I once was, the shadow of happy hour.  
- <pre>                 +                 '       *         '                         
-     +   +    +           * '                      +.       +                . +
-              '     '                              '         +                 *
-  o                           + '            '    .                             
-             .          +              '         .    +               + +   *   
- .    +       .o* +  '              '         .         .          </pre>
-   When I touched ground on the frozen desert, dry, barren, and covered in dust, time had stopped—or at least time in the way that I am used to feeling it. The desert, deserted. It was awfully quiet, stillness reigned. It had been a long time since I felt as serene as I did trudging through the static haze and red rock-covered floor. Still, the silence here made me long for the subsonic hum of a weathered jukebox I once knew, the sticky floors, and the bartender who never let me see the bottom of my glass. For a split second I missed the ghost I once was, the shadow of happy hour.           
-<pre>                       .      .             .        o                     .  ' 
+                       .      .             .        o                     .  ' 
                                                +         '        '          +  
          . *.              o       +       +      '    +      .  +              
          '       '   ' .                      .    + .  .                       
@@ -50,7 +41,7 @@ I had no other choice but to push ahead, the past no longer mattered and the fut
 '    *           + +  o          '             '               .   . *          
  .    '             .                                         '                 
              .                                                 .                </pre>
-Guided by nothing but the pungent smell of sulfur, the pull of Sirius, and the steady glow of my green light, I carried on. I could only hope for whatever lay ahead at least had air, music, and a cold beer.
+Guided by nothing but the pungent smell of sulfur, the pull of Sirius, and the steady glow of my green light, I carried on. I could only hope that whatever lay ahead at least had air, music, and a cold beer.
 <pre>    .                 '       *                 o             .*           .  ' </pre>
 Finally, a structure appeared in the distance with a sign: The Martian Mirage Club. The shadow guarding the door had a long, ghoulish face. Tall in stature. Lanky but not frail. The type that comes to mind when you get that unsettling feeling someone is watching you but you turn around and no one’s there.
 <pre>              '       .                                          .      .       
@@ -60,12 +51,12 @@ Finally, a structure appeared in the distance with a sign: The Martian Mirage Cl
                     + o                       '               * *   '   </pre> 
  I needed to get inside.         
 <pre>.      '                                                    +    </pre>
-“Excuse me, sir?” I tried politely. “Is it alright if I address you sir?” <pre>               
+“Excuse me, sir?” I tried politely. “Is it alright if I address you as sir?” <pre>               
 +          '              '                    +'   +     .   </pre>  
 He didn't budge. I continued anyway.   
 <pre>           .  
     +      .     o    . . *      </pre>
-“I come alone, and I come in peace?” I said, making a quintessential alien joke. It doesn’t land. I threw caution at the wind for my last chance at redemption.                          .        .           '
+“I come alone, and I come in peace?” I said, making a quintessential alien joke. It didn’t land. I threw caution to the wind for my last chance at redemption.”                          .        .           '
 <pre>                   .         .  .           *    .          '                   
                          .              '        '                              
           .  .*        '       '     +             </pre>

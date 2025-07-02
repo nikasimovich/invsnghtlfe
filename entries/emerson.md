@@ -39,7 +39,7 @@ Because you’re trying not to slip into the Hudson and freeze over like New Yea
 <h3>Blood Nights II</h3>
 <span class="special">Homecrest</span>
 
-Because they never invite you to the drag races on Bedford. Because you have to smell the tires anyway. Because one night a grey Ferrari Spider flies past you, and you, tequila drunk thinking do or die, want to fly too. The sidewalk in South Brooklyn pulls up and down with every house. It’s not flat like the paved road. You pedal anyway. Because you wait for the crash. You want the crash, you always have.The handlebars smash. The bumper melts like angels in the snow. The palms reach out. The tarmac kisses you like it wants you here. You don’t feel it, but you almost can. You consider the nowhere.
+Because they never invite you to the drag races on Bedford. Because you have to smell the tires anyway. Because one night a grey Ferrari Spider flies past you, and you, tequila drunk thinking do or die, want to fly too. The sidewalk in South Brooklyn pulls up and down with every house. It’s not flat like the paved road. You pedal anyway. Because you wait for the crash. You want the crash, you always have. The handlebars smash. The bumper melts like angels in the snow. The palms reach out. The tarmac kisses you like it wants you here. You don’t feel it, but you almost can. You consider the nowhere.
 </div>
 
 <div class="nightType">

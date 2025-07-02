@@ -11,7 +11,7 @@ layout: essay.njk
 
 The punk with the mullet clutches me in their hand, sweating into me. Their sweat mixes with the condensation from the tall can of Modelo they’re swigging from and they ball their fist between sips, wiggling their damp fingers into me to dry them off. Beside them, their tall, combat boot-clad girlfriend mimes a two-step.
 
-The three of us stand in a funny kind of line in the hallway of a brownstone’s basement apartment. We’re waiting for the (affectionately named) door bitch to check everyone's suggested donations for this DIY show. They’re friendly, greeting everyone with a warmth that suggests this venue is actually their home, and one they like hosting in. I peek around from inside mullet’s hand to take in the fancifully named Magic Mountain.; 
+The three of us stand in a funny kind of line in the hallway of a brownstone’s basement apartment. We’re waiting for the (affectionately named) door bitch to check everyone's suggested donations for this DIY show. They’re friendly, greeting everyone with a warmth that suggests this venue is actually their home, and one they like hosting in. I peek around from inside mullet’s hand to take in the fancifully named Magic Mountain.
 
 As far as I can tell, it’s just the lower level of a deteriorating pre-war Brooklyn apartment, decorated with desktop printouts of defunct Six Flags attractions. Not that this matters to me, or to anyone else in line. This show is so small practically everyone on line was personally invited.
 
@@ -35,7 +35,7 @@ The punk drinks gratefully, slowly regaining their breath. “Okay, we’re done
 
 The punk nods vigorously, cheeks full of water. Door bitch doesn’t need to be told twice. They slide the leather pouch into their pants pocket. Now, the door opens for me.
 
-Inside is 20degrees hotter, wetter, and louder. From inside my leather cocoon I can see the sweat-soaked bodies filling the tiny room, hair plastered on their foreheads and grins on faces. I recognize some of these girls; one of them slid me over the bar at <a href="https://youtu.be/uzCmbQ5GHXk?si=1Lur-QpgL1LOLgfn&t=77" target="_blank">Purgatory</a> just two nights ago. <blockquote>Rainbow string lights cast everything in a dim light, making the whole scene feel like a crowded, loud womb. Or a trans rainforest.</blockquote>
+Inside is 20 degrees hotter, wetter, and louder. From inside my leather cocoon I can see the sweat-soaked bodies filling the tiny room, hair plastered on their foreheads and grins on faces. I recognize some of these girls; one of them slid me over the bar at <a href="https://youtu.be/uzCmbQ5GHXk?si=1Lur-QpgL1LOLgfn&t=77" target="_blank">Purgatory</a> just two nights ago. <blockquote>Rainbow string lights cast everything in a dim light, making the whole scene feel like a crowded, loud womb. Or a trans rainforest.</blockquote>
 
 There’s a little clearing of wires and amps at the back of the room where two long-haired girls and a mustachioed cis man are setting up. The girl with the blood-spattered Hello Kitty guitar catches door bitch’s eye, beckons them up to ask if they can tell the backyard smokers to get their asses inside, the next band is starting. 
 
