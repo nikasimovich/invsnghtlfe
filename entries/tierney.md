@@ -25,7 +25,7 @@ I can tell a few of the dolls are starting to recognize me, too. I’ve heard th
 
 <hr/>
 
-The basement apartment door opens, emitting a wave of distorted guitars and <a href="https://www.youtube.com/watch?v=r2fbqUgyg-E" target="_blank">speak-singing</a> that fills the hallway up like a fish tank before closing, draining the sound back down to knee-level. An out-of-breath body rushes out, a buzzcutpunk wearing a sweat-soaked tank top I can just make out through a gap in the money pouch’s zipper.
+The basement apartment door opens, emitting a wave of distorted guitars and <a href="https://www.youtube.com/watch?v=r2fbqUgyg-E" target="_blank">speak-singing</a> that fills the hallway up like a fish tank before closing, draining the sound back down to knee-level. An out-of-breath body rushes out, a buzzcut punk wearing a sweat-soaked tank top I can just make out through a gap in the money pouch’s zipper.
 
 “It’s so hot in there,” the punk gasps. Door bitch offers them a metal water bottle.
 

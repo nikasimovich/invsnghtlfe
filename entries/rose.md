@@ -10,7 +10,7 @@ layout: essay.njk
 ---
 <div class="nightType">
 <h3 class="space">One</h3>
-My mother forks into her lobster as she watches me mow my filet mignon into slices, “They undercooked it. I can have them take it back” She insists, her first bite sits plump and upright on her fork, butter and juices running down and through the prongs. The yellow inching toward her palm.
+My mother forks into her lobster as she watches me mow my filet mignon into slices, “They undercooked it. I can have them take it back,” she insists, her first bite sits plump and upright on her fork, butter and juices running down and through the prongs. The yellow inching toward her palm.
 
 I suck in a deep breath and land my bite between my teeth, staring back and nodding as the first taste passes my tongue. “It’s medium. Like I asked.”
 
